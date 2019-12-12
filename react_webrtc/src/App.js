@@ -1,11 +1,13 @@
 import React from 'react';
-import Video from "./components/atoms/Video"
+import { Route } from 'react-router-dom';
+
+import { WebRTC } from "./pages"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Video />
+      <Route path="/about" component={WebRTC}/>
     </div>
   );
 }
